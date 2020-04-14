@@ -23,7 +23,7 @@ const Counter=({handleCountryChange})=>{
         <div className={style.container}>
             <FormControl>
                 <NativeSelect defaultValue=""  onChange={e=>handleCountryChange(e.target.value)}>
-                    <option value="global">Global</option>
+                    <option value="">Global</option>
                     {
                        country.map((count,i)=><option key={i} value={count}>{count}</option>) 
                     }
